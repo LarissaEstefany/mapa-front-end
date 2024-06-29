@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop -Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo da Empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="novoAqui">Sou novo por aqui</a></li>
+                <li><a href="#" id="jaCadastro">Já tenho cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="formCadastro" class="formulario">
+            <h2>Cadastro de Usuário</h2>
+            <form id="formNovo">
+                <label for="nomeCompleto">Nome completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+                
+                <label for="emailNovo">Email:</label>
+                <input type="email" id="emailNovo" name="emailNovo" required>
+                
+                <label for="senhaNovo">Senha:</label>
+                <input type="password" id="senhaNovo" name="senhaNovo" required>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div id="formLogin" class="formulario">
+            <h2>Login</h2>
+            <form id="formExistente">
+                <label for="emailExistente">Email:</label>
+                <input type="email" id="emailExistente" name="emailExistente" required>
+                
+                <label for="senhaExistente">Senha:</label>
+                <input type="password" id="senhaExistente" name="senhaExistente" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
